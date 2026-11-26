@@ -1933,13 +1933,13 @@ body {
   opacity: 0.9;
 }
 
-.footer-parents-name {
+.footer-family-name {
   font-family: var(--font-heading);
-  font-size: clamp(1.25rem, 3.5vw, 1.7rem);
+  font-size: clamp(1.35rem, 4vw, 1.9rem);
   font-weight: 800;
-  letter-spacing: 3.5px;
+  letter-spacing: 4px;
   color: #f7ca66;
-  text-shadow: 0 0 16px rgba(247, 202, 102, 0.4);
+  text-shadow: 0 0 18px rgba(247, 202, 102, 0.45);
   margin-bottom: 8px;
   text-transform: uppercase;
 }
