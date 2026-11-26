@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Jimmy Jani &amp; Palak Nayak | Royal Wedding Celebration</title>
+  
+  <!-- Google Fonts: Refined Luxury Typography (Marcellus, Cormorant Garamond, Cinzel) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Italiana&family=Marcellus&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕉️</text></svg>">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=centered_explore_v15">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Jimmy Jani &amp; Palak Nayak | Royal Wedding Celebration">
+  <meta name="description" content="Wedding celebration of Jimmy Jani &amp; Palak Nayak at Fairfield by Marriott Mumbai">
+  <meta property="og:description" content="Two souls • One story • Forever together">
+  <meta property="og:image" content="card_reference.jpg">
+  <meta property="og:type" content="website">
+</head>
+<body>
+
+  <!-- Floating Audio Pill with Animated Sound Waves -->
+  <button id="audioPill" class="audio-pill" onclick="toggleMusic()" aria-label="Toggle Romantic Wedding Music" title="Play Romantic Indian Classical - Until I Found You">
+    <div class="audio-waves" id="audioWaves">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <i class="fa-solid fa-play" id="audioIcon"></i>
+  </button>
+  <!-- Background Romantic Wedding Song ("Until I Found You" - Indian Classical Instrumental from 0:30) -->
+  <audio id="weddingAudio" src="assets/wedding_song.mp3" preload="auto" loop autoplay playsinline></audio>
+
+
+  <!-- ==================== HERO SECTION: WARM TWILIGHT SKY & SACRED HINDU TEMPLE ==================== -->
+  <header class="hero-sky-section" id="hero">
+    <!-- Fireworks Canvas confined specifically to Hero Twilight Sky (None in footer or cards) -->
+    <canvas id="fireworksCanvas"></canvas>
+    
+    <!-- 1. REALISTIC SKY ATMOSPHERE LAYERS -->
+    <div class="sky-backdrop-layer">
+      <!-- Realistic Sunset Sky Texture -->
+      <div class="sky-texture-overlay"></div>
+      
+      <!-- Radiant Golden Sun / Sacred Halo Behind Mandir Apex -->
+      <div class="sky-sun-glow">
+        <img src="assets/golden_sun_radiant.webp" alt="Sacred Golden Sun" class="sun-glow-img">
+      </div>
+
+      <!-- Full-Screen Realistic Forest Background Valley Behind Temple -->
+      <div class="sky-forest-layer">
+        <img src="assets/misty_mountains_valley.webp" alt="Misty Forest Valley" class="forest-bg-img">
+      </div>
+
+      <!-- Volumetric Moving Twilight Clouds (Continuous realistic glide across sunset sky) -->
+      <div class="sky-clouds-wrap">
+        <div class="cloud-track cloud-track-1">
+          <img src="assets/sunset_clouds_golden.webp" alt="Twilight Sunset Clouds" class="cloud-img">
+        </div>
+        <div class="cloud-track cloud-track-2">
+          <img src="assets/sunset_clouds_golden.webp" alt="Twilight Sunset Clouds" class="cloud-img">
+        </div>
+        <div class="cloud-track cloud-track-3">
+          <img src="assets/sunset_clouds_golden.webp" alt="Twilight Sunset Clouds" class="cloud-img">
+        </div>
+      </div>
+
+      <!-- Seamless Hero-to-Events Transition Blend (Right at the path end) -->
+      <div class="hero-page-blend-transition"></div>
+
+      <!-- Flocking Birds Silhouettes Across Evening Sky -->
+      <div class="sky-birds-layer">
+        <svg class="birds-svg" viewBox="0 0 500 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 40,60 Q 48,50 56,60 Q 64,50 72,60" stroke="rgba(40, 25, 20, 0.65)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M 85,45 Q 91,37 97,45 Q 103,37 109,45" stroke="rgba(40, 25, 20, 0.55)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <path d="M 120,65 Q 125,58 130,65 Q 135,58 140,65" stroke="rgba(40, 25, 20, 0.5)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M 160,52 Q 164,46 168,52 Q 172,46 176,52" stroke="rgba(40, 25, 20, 0.45)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M 210,40 Q 215,33 220,40 Q 225,33 230,40" stroke="rgba(40, 25, 20, 0.4)" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <!-- Twinkling Evening Stars in the Twilight Zenith -->
+      <div class="sky-stars-layer">
+        <span class="star star-1"></span>
+        <span class="star star-2"></span>
+        <span class="star star-3"></span>
+        <span class="star star-4"></span>
+        <span class="star star-5"></span>
+        <span class="star star-6"></span>
+      </div>
+    </div>
+
+    <!-- 2. ROYAL SCALLOPED FLORAL ARCH & HANGING BRASS BELLS AT TOP -->
+    <div class="royal-arch-header">
+      <picture class="arch-picture">
+        <source media="(max-width: 600px)" srcset="assets/royal_arch_mobile.webp">
+        <img src="assets/royal_arch_top.webp" alt="Royal Scalloped Floral Arch" class="royal-arch-img">
+      </picture>
+      
+      <!-- Hanging Brass Temple Bells with Fresh Garlands -->
+      <div class="hanging-bells-container">
+        <!-- Far Left Bell (Long) -->
+        <div class="bell-hanger bell-pos-1">
+          <img src="assets/hanging_bell_long.png" alt="Hanging Temple Bell" class="bell-img bell-sway-1">
+        </div>
+        <!-- Inner Left Bell (Short) -->
+        <div class="bell-hanger bell-pos-2">
+          <img src="assets/hanging_bell_short.png" alt="Hanging Temple Bell" class="bell-img bell-sway-2">
+        </div>
+        <!-- Inner Right Bell (Short) -->
+        <div class="bell-hanger bell-pos-3">
+          <img src="assets/hanging_bell_short.png" alt="Hanging Temple Bell" class="bell-img bell-sway-3">
+        </div>
+        <!-- Far Right Bell (Long) -->
+        <div class="bell-hanger bell-pos-4">
+          <img src="assets/hanging_bell_long.png" alt="Hanging Temple Bell" class="bell-img bell-sway-4">
+        </div>
+      </div>
+    </div>
+
+    <div class="sky-container">
+      
+      <!-- Main Header Block -->
+      <div class="names-wrapper">
+        
+        <!-- Lord Ganesha Golden Emblem -->
+        <div class="ganesha-emblem">
+          <svg class="ganesha-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Stylized Auspicious Ganesha Calligraphy -->
+            <path d="M 50,15 C 42,15 35,22 35,32 C 35,42 45,46 50,48 C 55,46 65,42 65,32 C 65,22 58,15 50,15 Z" stroke="#ffd166" stroke-width="2.5" fill="rgba(255, 209, 102, 0.15)"></path>
+            <!-- Trunk -->
+            <path d="M 50,48 Q 50,68 44,78 Q 40,84 46,86 Q 52,86 52,80 Q 52,65 52,48" stroke="#ffd166" stroke-width="3" stroke-linecap="round" fill="none"></path>
+            <!-- Ears -->
+            <path d="M 35,26 C 24,20 18,30 20,40 C 22,50 32,48 35,44" stroke="#ffd166" stroke-width="2.5" fill="none"></path>
+            <path d="M 65,26 C 76,20 82,30 80,40 C 78,50 68,48 65,44" stroke="#ffd166" stroke-width="2.5" fill="none"></path>
+            <!-- Modak / Tusk / Tilak -->
+            <circle cx="36" cy="74" r="3.5" fill="#e76f51"></circle>
+            <path d="M 50,22 L 50,34" stroke="#e76f51" stroke-width="3" stroke-linecap="round"></path>
+            <circle cx="50" cy="20" r="2" fill="#ffd166"></circle>
+          </svg>
+          <p class="shri-ganeshaya">|| SHRI GANESHAYA NAMAH ||</p>
+        </div>
+
+        <p class="invitation-lead">We are delighted to invite you to celebrate the union of</p>
+        
+        <!-- Couple Names -->
+        <div class="couple-hero-title">
+          <h1 class="groom-fullname">Jimmy Jani</h1>
+          <div class="and-separator">
+            <span class="sep-line"></span>
+            <span class="and-script">&amp;</span>
+            <span class="sep-line"></span>
+          </div>
+          <h1 class="bride-fullname">Palak Nayak</h1>
+        </div>
+
+        <!-- Tagline from your card -->
+        <p class="couple-tagline">TWO SOULS &bull; ONE STORY &bull; FOREVER TOGETHER</p>
+      </div>
+
+      <!-- Traditional Hindu Temple (Mandir) & Hindu Couple (Jimmy & Palak) - Inspired by Iconic Ram Mandir -->
+      <div class="temple-showcase-wrapper">
+        
+        <!-- Saffron Flag (Bhagwa Dhwaja) Fluttering atop Apex Shikhara Spire -->
+        <div class="temple-flag-crest">
+          <div class="flag-pole"></div>
+          <div class="flag-cloth">
+            <svg viewBox="0 0 45 28" fill="none" class="flag-svg">
+              <path d="M 0,2 Q 22,6 44,0 Q 28,15 44,26 Q 22,22 0,26 Z" fill="url(#heroFlagGrad)"/>
+              <circle cx="16" cy="13" r="3" fill="#ffd166"/>
+              <defs>
+                <linearGradient id="heroFlagGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ff9e00"/>
+                  <stop offset="60%" stop-color="#ff6000"/>
+                  <stop offset="100%" stop-color="#d00000"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Sacred Golden Radiance Flare Behind Temple -->
+        <div class="temple-divine-aura"></div>
+
+        <!-- The Authentic Ram Mandir & Royal Couple Artwork -->
+        <picture class="temple-picture">
+          <source media="(max-width: 600px)" srcset="assets/ram_mandir_blended_mobile.webp">
+          <img src="assets/ram_mandir_blended.webp" alt="Iconic Ram Mandir Temple and Royal Couple Jimmy & Palak" class="ram-mandir-img">
+        </picture>
+
+<!-- Grounding seamlessly integrated into forest base -->
+      </div>
+
+      <!-- Action Prompt -->
+      <div class="hero-bottom-actions">
+        <div class="scroll-prompt" onclick="scrollToSection('eventsSection')">
+          <span class="prompt-text">EXPLORE WEDDING ACTIVITIES</span>
+          <div class="prompt-arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==================== WINTER CARDS ZONE: SCENE 2 (EVENTS) & SCENE 3 (VENUE) ==================== -->
+  <div class="cards-winter-zone" id="cardsWinterZone">
+    <!-- Magical Snowfall Canvas Layer for the Cards Pages -->
+    <canvas id="snowCanvas" class="snow-canvas"></canvas>
+
+    <!-- ==================== SCENE 2: THE AUSPICIOUS EVENTS ==================== -->
+    <section class="section events-arch-section" id="eventsSection">
+    
+    <div class="events-container">
+      
+      <div class="events-section-header">
+        <span class="regal-tag">SHUBH VIVAH CELEBRATIONS</span>
+        <h2 class="events-main-title">Auspicious Occasions</h2>
+        <p class="events-main-desc">"Your presence will make our celebration even more special"</p>
+      </div>
+
+      <!-- The 2 Events from your printed card -->
+      <div class="arched-cards-grid two-cards-grid">
+        
+        <!-- EVENT 1: THE RYTHAM OF BEATS (SANGEET SANDHYA) -->
+        <div class="arch-card-wrapper" id="sangeetCardWrapper">
+          <div class="card-flipper">
+            
+            <!-- FRONT OF CARD: EVENT DETAILS -->
+            <div class="card-face card-front arch-card sangeet-card">
+              
+              <!-- Floral Blossom Spray -->
+              <div class="floral-spray top-spray">
+                <svg viewBox="0 0 120 70" fill="none" class="floral-svg">
+                  <circle cx="60" cy="25" r="10" fill="#fceade" stroke="#d4a373" stroke-width="1.5"></circle>
+                  <circle cx="60" cy="25" r="4" fill="#e76f51"></circle>
+                  <circle cx="42" cy="35" r="8" fill="#fff5ec" stroke="#d4a373" stroke-width="1.2"></circle>
+                  <circle cx="78" cy="35" r="8" fill="#fff5ec" stroke="#d4a373" stroke-width="1.2"></circle>
+                  <path d="M 30,30 Q 15,22 10,32 Q 22,38 30,30 Z" fill="#84a98c"></path>
+                  <path d="M 90,30 Q 105,22 110,32 Q 98,38 90,30 Z" fill="#84a98c"></path>
+                </svg>
+              </div>
+
+              <div class="arch-content">
+                
+                <!-- Dholak / Tabla & Musical Notes Artwork -->
+                <div class="event-motif-box">
+                  <svg viewBox="0 0 140 90" fill="none" class="motif-svg">
+                    <!-- Dholak / Tabla -->
+                    <ellipse cx="48" cy="50" rx="20" ry="26" fill="#a0522d" stroke="#5c2c16" stroke-width="2"></ellipse>
+                    <ellipse cx="48" cy="50" rx="14" ry="20" fill="#f4e1c1"></ellipse>
+                    <circle cx="48" cy="50" r="7" fill="#3d1d11"></circle>
+                    
+                    <ellipse cx="82" cy="52" rx="17" ry="22" fill="#b86b33" stroke="#5c2c16" stroke-width="2"></ellipse>
+                    <ellipse cx="82" cy="52" rx="12" ry="17" fill="#f4e1c1"></ellipse>
+                    <circle cx="82" cy="52" r="5" fill="#3d1d11"></circle>
+                    
+                    <!-- Golden Musical Notes & Soundwaves -->
+                    <path d="M 95,30 Q 115,20 130,28" stroke="#d4af37" stroke-width="2" fill="none"></path>
+                    <path d="M 98,38 Q 118,28 132,36" stroke="#d4af37" stroke-width="1.5" fill="none"></path>
+                    <circle cx="102" cy="22" r="3" fill="#d4af37"></circle>
+                    <path d="M 105,22 L 105,10 L 118,12 L 118,24" stroke="#d4af37" stroke-width="1.8" fill="none"></path>
+                    <circle cx="118" cy="24" r="3" fill="#d4af37"></circle>
+                  </svg>
+                </div>
+
+                <h3 class="event-arch-title">THE RYTHAM OF BEATS</h3>
+                <p class="event-arch-subtitle">Sangeet Sandhya</p>
+                
+                <div class="event-details-block">
+                  <div class="event-detail-item">
+                    <div class="detail-icon"><i class="fa-regular fa-calendar"></i></div>
+                    <div class="detail-text">
+                      <strong>SATURDAY</strong>
+                      <span>27th February 2027</span>
+                    </div>
+                  </div>
+
+                  <div class="event-detail-item">
+                    <div class="detail-icon"><i class="fa-regular fa-clock"></i></div>
+                    <div class="detail-text">
+                      <strong>6:00 PM ONWARDS</strong>
+                      <span>Musical Beats &amp; Celebrations</span>
+                    </div>
+                  </div>
+
+                  <div class="event-detail-item">
+                    <div class="detail-icon"><i class="fa-solid fa-hotel"></i></div>
+                    <div class="detail-text">
+                      <strong>Fairfield by Marriott Hotel</strong>
+                      <span>Mumbai</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dress Code Action Button (Flips Card 180deg) -->
+                <div class="arch-card-actions">
+                  <button class="btn-dresscode" onclick="toggleCardFlip('sangeetCardWrapper')">
+                    <i class="fa-solid fa-sparkles"></i> DRESS CODE <i class="fa-solid fa-rotate"></i>
+                  </button>
+                </div>
+
+              </div>
+
+              <!-- Bottom Floral Spray -->
+              <div class="floral-spray bottom-spray">
+                <svg viewBox="0 0 120 70" fill="none" class="floral-svg">
+                  <circle cx="60" cy="45" r="9" fill="#fceade" stroke="#d4a373" stroke-width="1.5"></circle>
+                  <circle cx="60" cy="45" r="3.5" fill="#e76f51"></circle>
+                  <circle cx="44" cy="38" r="7" fill="#fff5ec" stroke="#d4a373" stroke-width="1"></circle>
+                  <circle cx="76" cy="38" r="7" fill="#fff5ec" stroke="#d4a373" stroke-width="1"></circle>
+                  <path d="M 32,45 Q 18,52 14,44 Q 24,38 32,45 Z" fill="#84a98c"></path>
+                  <path d="M 88,45 Q 102,52 106,44 Q 96,38 88,45 Z" fill="#84a98c"></path>
+                </svg>
+              </div>
+
+            </div>
+
+            <!-- BACK OF CARD: DRESS CODE (WESTERNS) -->
+            <div class="card-face card-back arch-card sangeet-card sangeet-back">
+              
+              <!-- Floral Blossom Spray -->
+              <div class="floral-spray top-spray">
+                <svg viewBox="0 0 120 70" fill="none" class="floral-svg">
+                  <circle cx="60" cy="25" r="10" fill="#fceade" stroke="#d4a373" stroke-width="1.5"></circle>
+                  <circle cx="60" cy="25" r="4" fill="#e76f51"></circle>
+                  <circle cx="42" cy="35" r="8" fill="#fff5ec" stroke="#d4a373" stroke-width="1.2"></circle>
+                  <circle cx="78" cy="35" r="8" fill="#fff5ec" stroke="#d4a373" stroke-width="1.2"></circle>
+                  <path d="M 30,30 Q 15,22 10,32 Q 22,38 30,30 Z" fill="#84a98c"></path>
+                  <path d="M 90,30 Q 105,22 110,32 Q 98,38 90,30 Z" fill="#84a98c"></path>
+                </svg>
+              </div>
+
+              <div class="arch-content dresscode-content">
+                
+                <div class="wardrobe-header">
+                  <h4 class="wardrobe-guide-title">Wedding Wardrobe Guide</h4>
+                  <p class="wardrobe-subguide">THE RYTHAM OF BEATS</p>
+                </div>
+
+                <!-- WOODEN CLOTHING RACK WITH HANGING OUTFITS -->
+                <div class="wardrobe-rack-container">
+                  <svg viewBox="0 0 280 175" fill="none" class="wardrobe-rack-svg">
+                    <!-- Wooden Wardrobe Stand -->
+                    <rect x="20" y="24" width="240" height="6" rx="3" fill="#6d4c3d" stroke="#4a3328" stroke-width="0.8"/>
+                    <circle cx="20" cy="27" r="5" fill="#d4af37" stroke="#996515" stroke-width="0.8"/>
+                    <circle cx="260" cy="27" r="5" fill="#d4af37" stroke="#996515" stroke-width="0.8"/>
+                    <rect x="25" y="27" width="5" height="142" rx="2" fill="#5c3d2e"/>
+                    <rect x="250" y="27" width="5" height="142" rx="2" fill="#5c3d2e"/>
+                    <path d="M 18,166 L 37,166 L 34,169 L 21,169 Z" fill="#4a3328"/>
+                    <path d="M 243,166 L 262,166 L 259,169 L 246,169 Z" fill="#4a3328"/>
+
+                    <!-- OUTFIT 1: Royal Sapphire Gown (Ladies) -->
+                    <path d="M 64,24 C 64,17 68,17 68,21" stroke="#d4af37" stroke-width="1.2" fill="none"/>
+                    <polygon points="50,33 68,23 86,33 68,31" fill="#c49a45"/>
+                    <path d="M 54,34 Q 68,36 82,34 L 80,62 Q 68,66 56,62 Z" fill="#1e3a8a"/>
+                    <path d="M 54,34 Q 68,42 82,34" stroke="#d4af37" stroke-width="0.8" fill="none"/>
+                    <path d="M 56,62 Q 44,105 38,138 L 98,138 Q 92,105 80,62 Z" fill="#172554"/>
+                    <path d="M 62,63 Q 56,102 52,138" stroke="#1e3a8a" stroke-width="1.2" fill="none"/>
+                    <path d="M 74,63 Q 80,102 84,138" stroke="#1e3a8a" stroke-width="1.2" fill="none"/>
+                    <circle cx="58" cy="85" r="1.2" fill="#ffd700"/>
+                    <circle cx="76" cy="95" r="1.2" fill="#ffd700"/>
+                    <circle cx="68" cy="115" r="1.5" fill="#ffd700"/>
+
+                    <!-- OUTFIT 2: Wine Berry Floor-Length Gown (Ladies) -->
+                    <path d="M 120,24 C 120,17 124,17 124,21" stroke="#d4af37" stroke-width="1.2" fill="none"/>
+                    <polygon points="106,33 124,23 142,33 124,31" fill="#c49a45"/>
+                    <path d="M 112,33 Q 124,36 136,33 L 134,60 Q 124,64 114,60 Z" fill="#831843"/>
+                    <path d="M 116,33 L 124,25 L 132,33" stroke="#fbbf24" stroke-width="1" fill="none"/>
+                    <rect x="114" y="58" width="20" height="3" rx="1" fill="#d4af37"/>
+                    <path d="M 114,61 Q 102,102 96,140 L 152,140 Q 146,102 134,61 Z" fill="#701a75"/>
+                    <path d="M 120,61 Q 114,104 112,140" stroke="#831843" stroke-width="1.2" fill="none"/>
+                    <path d="M 128,61 Q 134,104 136,140" stroke="#831843" stroke-width="1.2" fill="none"/>
+                    <circle cx="124" cy="80" r="1.2" fill="#fde047"/>
+                    <circle cx="118" cy="110" r="1.5" fill="#fde047"/>
+                    <circle cx="132" cy="125" r="1.2" fill="#fde047"/>
+
+                    <!-- OUTFIT 3: Navy Royal Suit (Gentlemen) -->
+                    <path d="M 174,24 C 174,17 178,17 178,21" stroke="#d4af37" stroke-width="1.2" fill="none"/>
+                    <polygon points="158,33 178,23 198,33 178,31" fill="#c49a45"/>
+                    <path d="M 160,33 L 170,30 L 186,30 L 196,33 L 194,84 L 162,84 Z" fill="#1e293b"/>
+                    <polygon points="172,30 184,30 178,56" fill="#f8fafc"/>
+                    <polygon points="166,33 174,48 178,30" fill="#0f172a"/>
+                    <polygon points="190,33 182,48 178,30" fill="#0f172a"/>
+                    <circle cx="178" cy="62" r="1.2" fill="#d4af37"/>
+                    <circle cx="178" cy="70" r="1.2" fill="#d4af37"/>
+                    <polygon points="185,46 189,42 191,46" fill="#fbbf24"/>
+                    <rect x="168" y="83" width="10" height="52" fill="#0f172a"/>
+                    <rect x="180" y="83" width="10" height="52" fill="#0f172a"/>
+
+                    <!-- OUTFIT 4: Classic Jet Black Tuxedo (Gentlemen) -->
+                    <path d="M 226,24 C 226,17 230,17 230,21" stroke="#d4af37" stroke-width="1.2" fill="none"/>
+                    <polygon points="210,33 230,23 250,33 230,31" fill="#c49a45"/>
+                    <path d="M 212,33 L 222,30 L 238,30 L 248,33 L 246,84 L 214,84 Z" fill="#090d16"/>
+                    <polygon points="224,30 236,30 230,58" fill="#ffffff"/>
+                    <path d="M 226,36 L 226,42 L 230,40 Z" fill="#000000"/>
+                    <path d="M 234,36 L 234,42 L 230,40 Z" fill="#000000"/>
+                    <circle cx="230" cy="40" r="1.2" fill="#d4af37"/>
+                    <polygon points="216,33 226,52 228,30" fill="#171e2e" stroke="#d4af37" stroke-width="0.5"/>
+                    <polygon points="244,33 234,52 232,30" fill="#171e2e" stroke="#d4af37" stroke-width="0.5"/>
+                    <rect x="220" y="83" width="9.5" height="52" fill="#090d16"/>
+                    <rect x="231" y="83" width="9.5" height="52" fill="#090d16"/>
+                    <line x1="221" y1="83" x2="221" y2="135" stroke="#334155" stroke-width="0.8"/>
+                    <line x1="239" y1="83" x2="239" y2="135" stroke="#334155" stroke-width="0.8"/>
+                  </svg>
+                </div>
+
+                <!-- DRESS CODE INFO BLOCK (MIRRORING USER REFERENCE) -->
+                <div class="wardrobe-info-block">
+                  <span class="wardrobe-tag">DRESS CODE</span>
+                  <h3 class="wardrobe-code-title">WESTERNS</h3>
+                  <span class="wardrobe-occasion">EVENING CELEBRATION</span>
+                  <p class="wardrobe-think-quote">Think sharp tuxedos, tailored suits, evening gowns &amp; cocktail shimmer</p>
+                </div>
+
+                <!-- COLOR PALETTE BAR -->
+                <div class="dresscode-palette-bar">
+                  <span class="palette-title">COLOR PALETTE</span>
+                  <div class="palette-dots">
+                    <span class="p-dot" style="background: #0f172a" title="Midnight Navy"></span>
+                    <span class="p-dot" style="background: #064e3b" title="Emerald Green"></span>
+                    <span class="p-dot" style="background: #831843" title="Wine Berry"></span>
+                    <span class="p-dot" style="background: #d4af37" title="Metallic Gold"></span>
+                    <span class="p-dot" style="background: #f1f5f9" title="Champagne Silver"></span>
+                  </div>
+                </div>
+
+                <!-- Flip Back Button -->
+                <div class="arch-card-actions">
+                  <button class="btn-flipback" onclick="toggleCardFlip('sangeetCardWrapper')">
+                    <i class="fa-solid fa-arrow-rotate-left"></i> Back to Event Details
+                  </button>
+                </div>
+
+              </div>
+
+              <!-- Bottom Floral Spray -->
+              <div class="floral-spray bottom-spray">
+                <svg viewBox="0 0 120 70" fill="none" class="floral-svg">
+                  <circle cx="60" cy="45" r="9" fill="#fceade" stroke="#d4a373" stroke-width="1.5"></circle>
+                  <circle cx="60" cy="45" r="3.5" fill="#e76f51"></circle>
+                  <circle cx="44" cy="38" r="7" fill="#fff5ec" stroke="#d4a373" stroke-width="1"></circle>
+                  <circle cx="76" cy="38" r="7" fill="#fff5ec" stroke="#d4a373" stroke-width="1"></circle>
+                  <path d="M 32,45 Q 18,52 14,44 Q 24,38 32,45 Z" fill="#84a98c"></path>
+                  <path d="M 88,45 Q 102,52 106,44 Q 96,38 88,45 Z" fill="#84a98c"></path>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EVENT 2: THE MARRIAGE -->
+        <div class="arch-card-wrapper featured-arch" id="marriageCardWrapper">
+          <div class="card-flipper">
+            
+            <!-- FRONT OF CARD: EVENT DETAILS -->
+            <div class="card-face card-front arch-card marriage-card">
+              
+              <div class="floral-spray top-spray">
+                <svg viewBox="0 0 120 70" fill="none" class="floral-svg">
+                  <circle cx="60" cy="25" r="11" fill="#fdece3" stroke="#b02a37" stroke-width="1.8"></circle>
+                  <circle cx="60" cy="25" r="4.5" fill="#7b1126"></circle>
+                  <circle cx="40" cy="35" r="9" fill="#fff6f0" stroke="#b02a37" stroke-width="1.2"></circle>
+                  <circle cx="80" cy="35" r="9" fill="#fff6f0" stroke="#b02a37" stroke-width="1.2"></circle>
+                  <path d="M 28,28 Q 12,20 8,30 Q 20,38 28,28 Z" fill="#606c38"></path>
+                  <path d="M 92,28 Q 108,20 112,30 Q 100,38 92,28 Z" fill="#606c38"></path>
+                </svg>
+              </div>
+
+              <div class="arch-content">
+                
+                <!-- Sacred Mandap with Agni Havan Kund Motif -->
+                <div class="event-motif-box">
+                  <svg viewBox="0 0 140 90" fill="none" class="motif-svg">
+                    <!-- Floral Mandap Canopy Arch -->
+                    <path d="M 30,70 L 30,30 Q 70,12 110,30 L 110,70" stroke="#b8860b" stroke-width="2.5" fill="none"></path>
+                    <path d="M 25,32 Q 70,8 115,32" stroke="#d4af37" stroke-width="3" fill="none"></path>
+                    <!-- Garland Florals on Mandap -->
+                    <circle cx="45" cy="22" r="4.5" fill="#f8ad9d"></circle>
+                    <circle cx="70" cy="18" r="5.5" fill="#e76f51"></circle>
+                    <circle cx="95" cy="22" r="4.5" fill="#f8ad9d"></circle>
+                    <!-- Sacred Havan Agni Kund (Fire) -->
+                    <polygon points="52,72 88,72 82,62 58,62" fill="#c46210" stroke="#8b3a04" stroke-width="1.5"></polygon>
+                    <polygon points="56,62 84,62 80,55 60,55" fill="#d97706"></polygon>
+                    <!-- Sacred Holy Fire Flame -->
+                    <path d="M 70,36 C 75,44 78,48 76,54 C 74,58 66,58 64,54 C 62,48 65,44 70,36 Z" fill="#ffb703"></path>
+                    <path d="M 70,42 C 73,47 75,50 74,53 C 73,55 68,55 67,53 C 65,50 67,47 70,42 Z" fill="#fff3b0"></path>
+                  </svg>
+                </div>
+
+                <h3 class="event-arch-title marriage-title">THE MARRIAGE</h3>
+                <p class="event-arch-subtitle marriage-sub">Pheras &amp; Sacred Union</p>
+                
+                <div class="event-details-block">
+                  <div class="event-detail-item">
+                    <div class="detail-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                    <div class="detail-text">
+                      <strong>SUNDAY</strong>
+                      <span>28th February 2027</span>
+                    </div>
+                  </div>
+
+                  <div class="event-detail-item">
+                    <div class="detail-icon"><i class="fa-regular fa-clock"></i></div>
+                    <div class="detail-text">
+                      <strong>4:00 PM ONWARDS</strong>
+                      <span>Up to Your Presence</span>
+                    </div>
+                  </div>
+
+                  <div class="event-detail-item">
+                    <div class="detail-icon"><i class="fa-solid fa-hotel"></i></div>
+                    <div class="detail-text">
+                      <strong>Fairfield by Marriott Hotel</strong>
+                      <span>Mumbai</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dress Code Action Button (Flips Card 180deg) -->
+                <div class="arch-card-actions">
+                  <button class="btn-dresscode gold-dresscode" onclick="toggleCardFlip('marriageCardWrapper')">
+                    <i class="fa-solid fa-sparkles"></i> DRESS CODE <i class="fa-solid fa-rotate"></i>
+                  </button>
+                </div>
+
+              </div>
+
+              <!-- Bottom Floral Spray -->
+              <div class="floral-spray bottom-spray">
+                <svg viewBox="0 0 120 70" fill="none" class="floral-svg">
+                  <circle cx="60" cy="45" r="10" fill="#fdece3" stroke="#b02a37" stroke-width="1.5"></circle>
+                  <circle cx="60" cy="45" r="4" fill="#7b1126"></circle>
+                  <circle cx="42" cy="38" r="8" fill="#fff6f0" stroke="#b02a37" stroke-width="1"></circle>
+                  <circle cx="78" cy="38" r="8" fill="#fff6f0" stroke="#b02a37" stroke-width="1"></circle>
+                  <path d="M 30,45 Q 16,52 12,44 Q 22,38 30,45 Z" fill="#606c38"></path>
+                  <path d="M 90,45 Q 104,52 108,44 Q 98,38 90,45 Z" fill="#606c38"></path>
+                </svg>
+              </div>
+
+            </div>
+
+            <!-- BACK OF CARD: DRESS CODE (TRADITIONALS) -->
+            <div class="card-face card-back arch-card marriage-card marriage-back">
+              
+              <div class="floral-spray top-spray">
+                <svg viewBox="0 0 120 70" fill="none" class="floral-svg">
+                  <circle cx="60" cy="25" r="11" fill="#fdece3" stroke="#b02a37" stroke-width="1.8"></circle>
+                  <circle cx="60" cy="25" r="4.5" fill="#7b1126"></circle>
+                  <circle cx="40" cy="35" r="9" fill="#fff6f0" stroke="#b02a37" stroke-width="1.2"></circle>
+                  <circle cx="80" cy="35" r="9" fill="#fff6f0" stroke="#b02a37" stroke-width="1.2"></circle>
+                  <path d="M 28,28 Q 12,20 8,30 Q 20,38 28,28 Z" fill="#606c38"></path>
+                  <path d="M 92,28 Q 108,20 112,30 Q 100,38 92,28 Z" fill="#606c38"></path>
+                </svg>
+              </div>
+
+              <div class="arch-content dresscode-content">
+                
+                <div class="wardrobe-header">
+                  <h4 class="wardrobe-guide-title marriage-guide-title">Wedding Wardrobe Guide</h4>
+                  <p class="wardrobe-subguide marriage-subguide">THE MARRIAGE</p>
+                </div>
+
+                <!-- WOODEN CLOTHING RACK WITH HANGING OUTFITS -->
+                <div class="wardrobe-rack-container">
+                  <svg viewBox="0 0 280 175" fill="none" class="wardrobe-rack-svg">
+                    <!-- Wooden Wardrobe Stand -->
+                    <rect x="20" y="24" width="240" height="6" rx="3" fill="#6d4c3d" stroke="#4a3328" stroke-width="0.8"/>
+                    <circle cx="20" cy="27" r="5" fill="#d4af37" stroke="#996515" stroke-width="0.8"/>
+                    <circle cx="260" cy="27" r="5" fill="#d4af37" stroke="#996515" stroke-width="0.8"/>
+                    <rect x="25" y="27" width="5" height="142" rx="2" fill="#5c3d2e"/>
+                    <rect x="250" y="27" width="5" height="142" rx="2" fill="#5c3d2e"/>
+                    <path d="M 18,166 L 37,166 L 34,169 L 21,169 Z" fill="#4a3328"/>
+                    <path d="M 243,166 L 262,166 L 259,169 L 246,169 Z" fill="#4a3328"/>
+
+                    <!-- OUTFIT 1: Royal Crimson Lehenga Choli (Ladies) -->
+                    <path d="M 64,24 C 64,17 68,17 68,21" stroke="#d4af37" stroke-width="1.2" fill="none"/>
+                    <polygon points="50,33 68,23 86,33 68,31" fill="#c49a45"/>
+                    <path d="M 54,34 L 62,37 L 68,33 L 74,37 L 82,34 L 80,50 L 56,50 Z" fill="#991b1b" stroke="#ffd700" stroke-width="0.7"/>
+                    <rect x="58" y="52" width="20" height="3" rx="1" fill="#d4af37"/>
+                    <path d="M 58,55 Q 44,98 38,138 L 98,138 Q 92,98 78,55 Z" fill="#b91c1c"/>
+                    <path d="M 39,130 Q 68,134 97,130 L 98,138 Q 68,142 38,138 Z" fill="#f59e0b" stroke="#ffd700" stroke-width="0.8"/>
+                    <path d="M 63,55 Q 54,95 52,130" stroke="#f59e0b" stroke-width="1" fill="none"/>
+                    <path d="M 68,55 L 68,131" stroke="#f59e0b" stroke-width="1" fill="none"/>
+                    <path d="M 73,55 Q 82,95 84,130" stroke="#f59e0b" stroke-width="1" fill="none"/>
+                    <path d="M 54,36 Q 72,50 90,82 L 84,86 Q 66,54 54,42 Z" fill="rgba(254, 240, 138, 0.65)" stroke="#ffd700" stroke-width="0.7"/>
+
+                    <!-- OUTFIT 2: Traditional Silk Banarasi Saree (Ladies) -->
+                    <path d="M 120,24 C 120,17 124,17 124,21" stroke="#d4af37" stroke-width="1.2" fill="none"/>
+                    <polygon points="106,33 124,23 142,33 124,31" fill="#c49a45"/>
+                    <path d="M 112,33 L 124,36 L 136,33 L 134,50 L 114,50 Z" fill="#d97706" stroke="#fbbf24" stroke-width="0.8"/>
+                    <path d="M 114,50 Q 106,94 100,138 L 148,138 Q 142,94 134,50 Z" fill="#c026d3"/>
+                    <path d="M 101,130 Q 124,133 147,130 L 148,138 Q 124,141 100,138 Z" fill="#f59e0b" stroke="#ffd700" stroke-width="0.8"/>
+                    <path d="M 112,36 Q 130,52 144,90 L 138,94 Q 124,58 110,42 Z" fill="#ea580c" stroke="#ffd700" stroke-width="0.8"/>
+                    <line x1="108" y1="75" x2="140" y2="75" stroke="#fef08a" stroke-width="0.8" stroke-dasharray="2 2"/>
+                    <line x1="104" y1="95" x2="144" y2="95" stroke="#fef08a" stroke-width="0.8" stroke-dasharray="2 2"/>
+
+                    <!-- OUTFIT 3: Royal Ivory & Gold Sherwani (Gentlemen) -->
+                    <path d="M 174,24 C 174,17 178,17 178,21" stroke="#d4af37" stroke-width="1.2" fill="none"/>
+                    <polygon points="158,33 178,23 198,33 178,31" fill="#c49a45"/>
+                    <rect x="172" y="29" width="12" height="5" rx="1.5" fill="#991b1b" stroke="#ffd700" stroke-width="0.6"/>
+                    <path d="M 160,33 L 170,30 L 186,30 L 196,33 L 194,96 L 162,96 Z" fill="#fef9ee" stroke="#d4af37" stroke-width="0.8"/>
+                    <line x1="178" y1="34" x2="178" y2="96" stroke="#d4af37" stroke-width="2"/>
+                    <circle cx="178" cy="42" r="1.2" fill="#991b1b"/>
+                    <circle cx="178" cy="52" r="1.2" fill="#991b1b"/>
+                    <circle cx="178" cy="62" r="1.2" fill="#991b1b"/>
+                    <circle cx="178" cy="72" r="1.2" fill="#991b1b"/>
+                    <circle cx="178" cy="82" r="1.2" fill="#991b1b"/>
+                    <path d="M 164,33 C 158,48 156,76 160,118 L 168,118 C 166,76 168,48 170,33 Z" fill="#7b1126" stroke="#d4af37" stroke-width="0.8"/>
+                    <line x1="160" y1="116" x2="168" y2="116" stroke="#ffd700" stroke-width="1.5"/>
+                    <rect x="171" y="96" width="6" height="42" fill="#fffdfa" stroke="#e2e8f0" stroke-width="0.5"/>
+                    <rect x="179" y="96" width="6" height="42" fill="#fffdfa" stroke="#e2e8f0" stroke-width="0.5"/>
+
+                    <!-- OUTFIT 4: Royal Bandhgala & Modi Kurta (Gentlemen) -->
+                    <path d="M 226,24 C 226,17 230,17 230,21" stroke="#d4af37" stroke-width="1.2" fill="none"/>
+                    <polygon points="210,33 230,23 250,33 230,31" fill="#c49a45"/>
+                    <rect x="224" y="29" width="12" height="5" rx="1.5" fill="#78350f" stroke="#ffd700" stroke-width="0.6"/>
+                    <path d="M 212,33 L 222,30 L 238,30 L 248,33 L 246,88 L 214,88 Z" fill="#7b1126"/>
+                    <line x1="230" y1="34" x2="230" y2="88" stroke="#ffd700" stroke-width="2"/>
+                    <circle cx="230" cy="42" r="1.2" fill="#fbbf24"/>
+                    <circle cx="230" cy="52" r="1.2" fill="#fbbf24"/>
+                    <circle cx="230" cy="62" r="1.2" fill="#fbbf24"/>
+                    <circle cx="230" cy="72" r="1.2" fill="#fbbf24"/>
+                    <polygon points="237,44 241,40 243,44" fill="#fbbf24"/>
+                    <path d="M 216,88 L 244,88 L 243,94 L 217,94 Z" fill="#fef3c7"/>
+                    <rect x="221" y="93" width="8" height="45" fill="#f8fafc" stroke="#cbd5e1" stroke-width="0.5"/>
+                    <rect x="231" y="93" width="8" height="45" fill="#f8fafc" stroke="#cbd5e1" stroke-width="0.5"/>
+                  </svg>
+                </div>
+
+                <!-- DRESS CODE INFO BLOCK (MIRRORING USER REFERENCE) -->
+                <div class="wardrobe-info-block">
+                  <span class="wardrobe-tag gold-tag">DRESS CODE</span>
+                  <h3 class="wardrobe-code-title marriage-title">TRADITIONALS</h3>
+                  <span class="wardrobe-occasion marriage-occasion">ROYAL WEDDING CELEBRATION</span>
+                  <p class="wardrobe-think-quote">Think royal sherwanis, regal bandhgalas, heritage lehengas &amp; silk sarees</p>
+                </div>
+
+                <!-- COLOR PALETTE BAR -->
+                <div class="dresscode-palette-bar">
+                  <span class="palette-title marriage-palette-title">COLOR PALETTE</span>
+                  <div class="palette-dots">
+                    <span class="p-dot" style="background: #991b1b" title="Royal Crimson"></span>
+                    <span class="p-dot" style="background: #78350f" title="Maroon Zari"></span>
+                    <span class="p-dot" style="background: #ea580c" title="Saffron Orange"></span>
+                    <span class="p-dot" style="background: #f59e0b" title="Haldi Gold"></span>
+                    <span class="p-dot" style="background: #fdf2e9" title="Ivory Silk"></span>
+                  </div>
+                </div>
+
+                <!-- Flip Back Button -->
+                <div class="arch-card-actions">
+                  <button class="btn-flipback" onclick="toggleCardFlip('marriageCardWrapper')">
+                    <i class="fa-solid fa-arrow-rotate-left"></i> Back to Event Details
+                  </button>
+                </div>
+
+              </div>
+
+              <!-- Bottom Floral Spray -->
+              <div class="floral-spray bottom-spray">
+                <svg viewBox="0 0 120 70" fill="none" class="floral-svg">
+                  <circle cx="60" cy="45" r="10" fill="#fdece3" stroke="#b02a37" stroke-width="1.5"></circle>
+                  <circle cx="60" cy="45" r="4" fill="#7b1126"></circle>
+                  <circle cx="42" cy="38" r="8" fill="#fff6f0" stroke="#b02a37" stroke-width="1"></circle>
+                  <circle cx="78" cy="38" r="8" fill="#fff6f0" stroke="#b02a37" stroke-width="1"></circle>
+                  <path d="M 30,45 Q 16,52 12,44 Q 22,38 30,45 Z" fill="#606c38"></path>
+                  <path d="M 90,45 Q 104,52 108,44 Q 98,38 90,45 Z" fill="#606c38"></path>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SCENE 3: VENUE SPOTLIGHT (FAIRFIELD BY MARRIOTT) ==================== -->
+  <section class="section venue-section" id="venueSection">
+    <div class="venue-container">
+      
+      <div class="venue-showcase-card">
+        <span class="venue-tag"><i class="fa-solid fa-location-dot"></i> VENUE</span>
+        <h2 class="venue-hotel-name">Fairfield by Marriott Hotel</h2>
+        <p class="venue-hotel-address">Near Mumbai International Airport, Andheri East, Mumbai &ndash; 400099, India</p>
+
+        <p class="venue-special-note">
+          "Your presence will make our celebration even more special."
+        </p>
+
+        <!-- Signature from your invite -->
+        <div class="venue-signatures">
+          <p class="signature-names">Jimmy and Palak</p>
+          <p class="signature-tagline">Here's to new beginnings &hearts;</p>
+        </div>
+
+        <div class="venue-action-buttons">
+          <a href="https://maps.google.com/?q=Fairfield+by+Marriott+Mumbai+International+Airport" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-solid fa-location-arrow"></i> Open in Google Maps
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  </div> <!-- /cards-winter-zone -->
+
+  <!-- ==================== SCENE 4: LIVE COUNTDOWN & CALENDAR ==================== -->
+  <section class="section countdown-section" id="countdown">
+    <div class="countdown-wrapper">
+      
+      <!-- Live Wedding Countdown to February 27, 2027 -->
+      <div class="regal-countdown-box">
+        <h4 class="countdown-heading">COUNTING DOWN THE DAYS UNTIL WE SAY "I DO"</h4>
+        <div class="countdown-flex">
+          <div class="count-box">
+            <span class="count-digit" id="cDays">00</span>
+            <span class="count-unit">DAYS</span>
+          </div>
+          <span class="count-colon">:</span>
+          <div class="count-box">
+            <span class="count-digit" id="cHours">00</span>
+            <span class="count-unit">HOURS</span>
+          </div>
+          <span class="count-colon">:</span>
+          <div class="count-box">
+            <span class="count-digit" id="cMinutes">00</span>
+            <span class="count-unit">MINS</span>
+          </div>
+          <span class="count-colon">:</span>
+          <div class="count-box">
+            <span class="count-digit" id="cSeconds">00</span>
+            <span class="count-unit">SECS</span>
+          </div>
+        </div>
+        
+        <div class="calendar-btn-group">
+          <button class="btn-cal" onclick="addToGoogleCalendar()">
+            <i class="fa-brands fa-google"></i> Add to Google Calendar
+          </button>
+          <button class="btn-cal" onclick="downloadICS()">
+            <i class="fa-solid fa-calendar-arrow-down"></i> Download Apple / Outlook Invite
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER (SIMPLE, SUBTLE & ELEGANT) ==================== -->
+  <footer class="royal-footer">
+    <div class="footer-temple-emblem">
+      <i class="fa-solid fa-om"></i>
+    </div>
+    <h3 class="footer-couple-name" id="footerCoupleName">JIMMY JANI &amp; PALAK NAYAK</h3>
+    <p class="footer-blessing">"Two souls &bull; One story &bull; Forever together"</p>
+  </footer>
+
+  <!-- ==================== MODAL: VIEW ORIGINAL INVITATION CARD ==================== -->
+  <div id="cardModal" class="card-modal-backdrop" onclick="closeOriginalCardModal()">
+    <div class="card-modal-dialog" onclick="event.stopPropagation()">
+      <div class="modal-top">
+        <h3><i class="fa-solid fa-envelope-open"></i> Original Invitation Card</h3>
+        <button class="close-btn" onclick="closeOriginalCardModal()">&times;</button>
+      </div>
+      <div class="card-modal-image-wrapper">
+        <img src="card_reference.jpg" alt="Jimmy Jani and Palak Nayak Wedding Invitation Card" class="card-ref-image">
+      </div>
+      <div class="card-modal-actions">
+        <a href="card_reference.jpg" download="Jimmy_and_Palak_Wedding_Invite.jpg" class="btn btn-primary">
+          <i class="fa-solid fa-download"></i> Download Card
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+    <!-- Luxury Smooth Inertial Momentum Scrolling (Lenis) -->
+  <script src="assets/lenis.min.js"></script>
+  <!-- Main Application Script -->
+  <script src="script.js?v=sangeet_6pm_v19"></script>
+</body>
+</html>
