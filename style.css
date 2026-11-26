@@ -1933,6 +1933,17 @@ body {
   opacity: 0.9;
 }
 
+.footer-parents-name {
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 3.5vw, 1.7rem);
+  font-weight: 800;
+  letter-spacing: 3.5px;
+  color: #f7ca66;
+  text-shadow: 0 0 16px rgba(247, 202, 102, 0.4);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
 .footer-couple-name {
   font-family: var(--font-heading);
   font-size: clamp(1.2rem, 3.2vw, 1.55rem);
